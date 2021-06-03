@@ -8,7 +8,11 @@ public class convertToBinary {
 		System.out.println("Enter decimal number");
 		int decimal=sc.nextInt();
 		sc.close();
-		Binary.toBinary(decimal);
+		int[] binary=Binary.toBinary(decimal);
+		for(int i:binary)
+		{
+			System.out.println(i);
+		}
 
 	}
 
